@@ -1,0 +1,84 @@
+/* General Styles */
+ion-content {
+    --background: #121212; /* Dark background color */
+  }
+  
+  /* Contact Section */
+  .contact {
+    position: relative;
+    padding: 20px;
+    height: 90vh;
+    background: #121212; /* Dark background */
+    overflow: hidden;
+  }
+  
+  .contact-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Dark overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(8px); /* Frosted glass effect */
+    padding: 10px;
+  }
+  
+  .contact-content {
+    position: relative;
+    background: rgba(255, 255, 255, 0.15); /* Light translucent background */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 255, 255, 0.5); /* Neon glow */
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+  }
+  
+  .contact-content h2 {
+    color: #00bcd4; /* Neon cyan color */
+    margin-bottom: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 188, 212, 0.8); /* Neon glow */
+  }
+  
+  .contact-content p {
+    color: #b0bec5; /* Light grey text */
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  ion-item {
+    --background: transparent;
+    --highlight-color: #00bcd4; /* Neon cyan color */
+    --color: #fff;
+    --placeholder-color: #b0bec5;
+  }
+  
+  ion-input, ion-textarea {
+    color: #fff;
+  }
+  
+  ion-button {
+    margin-top: 20px;
+    background: #00bcd4; /* Neon cyan color */
+    color: #fff;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  ion-button:hover {
+    background: #0097a7; /* Darker cyan for hover */
+  }
+  

@@ -1,0 +1,72 @@
+/* General Styles */
+ion-content {
+    --background: #000; /* Dark background color */
+  }
+  
+  /* Projects Section */
+  .projects {
+    padding: 20px;
+    background: #000; /* Dark background */
+  }
+  
+  .projects-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .projects-content h2 {
+    color: #00bcd4; /* Neon cyan color */
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 0 0 15px rgba(0, 188, 212, 0.8); /* Neon glow */
+  }
+  
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .project-card {
+    position: relative;
+    width: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 255, 255, 0.5); /* Neon glow */
+    background: #0f0f0f; /* Slightly lighter dark background */
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+  
+  .project-card:hover img {
+    opacity: 0.8; /* Fade effect on hover */
+  }
+  
+  .project-info {
+    padding: 15px;
+    color: #fff;
+  }
+  
+  .project-info h3 {
+    color: #00bcd4; /* Neon cyan color */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(0, 188, 212, 0.8); /* Neon glow */
+  }
+  
+  .project-info p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  
+  .project-info strong {
+    color: #00bcd4; /* Neon cyan color */
+  }
+  

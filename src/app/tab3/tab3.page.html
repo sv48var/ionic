@@ -1,0 +1,49 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 3
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 3</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <app-explore-container name="Tab 3 page"></app-explore-container>
+</ion-content> -->
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Contact</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <section class="contact">
+    <div class="contact-overlay">
+      <div class="contact-content">
+        <h2>Contact Me</h2>
+        <p>Have any questions or just want to say hello? Feel free to reach out!</p>
+        <form>
+          <ion-item>
+            <ion-label position="floating">Name</ion-label>
+            <ion-input type="text" required></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input type="email" required></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Message</ion-label>
+            <ion-textarea rows="6" required></ion-textarea>
+          </ion-item>
+          <ion-button expand="full" type="submit">Send Message</ion-button>
+        </form>
+      </div>
+    </div>
+  </section>
+</ion-content>
