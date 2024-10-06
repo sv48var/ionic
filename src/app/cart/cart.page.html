@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>cart</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Shopping Cart</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="cartItems.length > 0; else emptyCart">
+    <ion-item *ngFor="let item of cartItems">
+      <ion-thumbnail slot="start" [routerLink]="['/product-detail', item.sku]">
+        <img [src]="getSecureImageUrl(item.images[0])" alt="{{ item.name }}" />
+      </ion-thumbnail>
+      <ion-label [routerLink]="['/product-detail', item.sku]">
+        <h2>{{ item.name }}</h2>
+        <p>Price: ₹{{ item.price }}</p>
+      </ion-label>
+      <ion-button (click)="removeFromCart(item.sku)" color="#fff">
+        <ion-icon slot="icon-only" name="trash" color="danger"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+
+  <ng-template #emptyCart>
+    <ion-text>No items in the cart.</ion-text>
+  </ng-template>
+</ion-content>
+
+<ion-footer class="footer-fixed">
+  <ion-toolbar>
+    <ion-button slot="start" expand="block" (click)="proceedToBuy()" color="success">
+      Proceed to buy
+    </ion-button>
+    <ion-title slot="end">Total: ₹{{ totalAmount }}</ion-title>
+  </ion-toolbar>
+</ion-footer>

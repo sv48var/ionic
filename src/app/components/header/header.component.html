@@ -1,12 +1,16 @@
 <ion-header style="background-color: #000;">
   <ion-toolbar>
-    <ion-title>
-      <img src="assets/Batman-Logo.png" alt="Logo" class="logo" />
-    </ion-title>
+    <ion-buttons slot="start">
+      <img src="assets/Batman-Logo.png" alt="Logo" style="width: 40px; height: auto;">
+    </ion-buttons>
+    <ion-title>Batman</ion-title>
     <ion-buttons slot="end">
-      <ion-avatar>
-        <img src="assets/batman-logo-png.png" alt="Profile Picture" />
-      </ion-avatar>
+      <ion-button [routerLink]="['/cart']" style="position: relative;">
+        <ion-icon slot="icon-only" name="cart"></ion-icon>
+        <ion-badge *ngIf="cartItems.length > 0" color="danger" style="position: absolute; top: -8px; right: -8px;">
+          {{ cartItems.length }}
+        </ion-badge>
+      </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>

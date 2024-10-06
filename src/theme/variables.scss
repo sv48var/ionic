@@ -1,2 +1,17 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+.toast-success {
+    --background: #28a745; 
+    --color: white;
+    --border-radius: 8px;
+    --padding-start: 16px;
+    --padding-end: 16px;
+  }
+  
+  .toast-error {
+    --background: #dc3545;  
+    --color: white;
+    --border-radius: 8px;
+    --padding-start: 16px;
+    --padding-end: 16px;
+  }

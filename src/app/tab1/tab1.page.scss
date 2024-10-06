@@ -1,77 +1,41 @@
-/* General Styles */
-ion-content {
-    --background: #f4f4f9; /* Light background color */
+.category-container {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center; 
+  flex-wrap: wrap; 
+  margin: 5px;
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer; 
+  p{
+    font-size: 0.9m;
   }
-  
-  /* Hero Section */
-  .hero {
-    position: relative;
-    min-height: 45vh;
-    background: url('/assets/your-hero-background.jpg') no-repeat center center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-  }
-  
-  .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Dark overlay */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .hero-content {
-    position: relative;
-    padding: 20px;
-    border-radius: 10px;
-    // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
-  }
-  
-  .avatar {
-    margin-bottom: 20px;
-  }
-  
-  .avatar img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 4px solid #fff;
-  }
-  
-  /* About Section */
-  .about {
-    position: relative;
-    padding: 20px;
-    min-height: 45vh;
-    background: url('/assets/your-about-background.jpg') no-repeat center center;
-    background-size: cover;
-  }
-  
-  .about-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Dark overlay */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .about-content {
-    position: relative;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    text-align: center;
-  }
-  
+}
+
+.category img {
+  width: 35px;
+  height: 35px; 
+  border-radius: 50%; 
+  object-fit: cover;
+}
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-images {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,81 @@
+.product-card {
+    margin: 16px;
+    border-radius: 16px;
+    background-color: #ffffff; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; 
+    height: 350px; 
+  
+    .product-image {
+      width: 100%; 
+      height: 200px; 
+      object-fit: cover; // Changed to cover to maintain aspect ratio
+    }
+  
+    ion-card-header {
+      background-color: #f1f1f1;
+      padding: 10px; // Added padding for better spacing
+    }
+  
+    .product-title {
+      font-size: 1.2em; // Slightly larger font size for better readability
+      font-weight: bold;
+      color: #333;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      -webkit-line-clamp: 2; 
+      margin: 0; 
+    }
+  
+    .product-brand {
+      font-size: 0.9em;
+      color: #777;
+    }
+  
+    ion-card-content {
+      display: flex;
+      justify-content: space-between; 
+      flex-grow: 1; 
+      padding: 10px; // Added padding for better layout
+    }
+  
+    .price-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 0;
+  
+      .price {
+        font-size: 1em; // Adjusted for better emphasis
+        font-weight: bold;
+        color: #28a745; 
+      }
+  
+      .out-of-stock {
+        color: #dc3545;
+        font-weight: bold;
+      }
+    }
+  
+    ion-button {
+      margin-top: auto; // Push the button to the bottom
+      background-color: #007bff; // Blue background for the button
+      color: #fff; // White text color
+      font-size: 0.9em; // Adjusted button font size
+      border-radius: 8px; // Rounded corners
+      transition: background-color 0.3s; // Transition for hover effect
+  
+      &:hover {
+        background-color: #0056b3; // Darker blue on hover
+      }
+  
+      &:disabled {
+        background-color: #c0c0c0; // Grey background for disabled button
+        cursor: not-allowed; // Change cursor on hover for disabled state
+      }
+    }
+  }
+  
